@@ -10,7 +10,7 @@ Break down:
 http://fp.sn.ifl.net/filterpages/17108-1504.htm#
 f=5 F5
 &
-c=1504
+c=1504 ?
 &
 d=2300 D2300
 &
@@ -20,4 +20,4 @@ t=895573851 T895573851
 &
 u=https://discord.com/ https://discord.com/
 &
-ip=notforu notforu
+ip=notforu ?
