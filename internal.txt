@@ -1,0 +1,33 @@
+ "id": "kmhjojemanablihnkjnnikokobgahlea",
+   "location": "EXTERNAL_POLICY_DOWNLOAD",
+   "manifest_version": 2,
+   "name": "RM SafetyNet Go",
+   "path": "/home/chronos/u-c1a7976b5f7291d3d4f7ce8b19ea89d29ff70044/Extensions/kmhjojemanablihnkjnnikokobgahlea/2.1.9_0",
+   "permissions": {
+      "active": {
+         "api": [ "identity", "identity.email", "storage", "tabs", "unlimitedStorage", "webRequest", "webRequestBlocking" ],
+         "explicit_hosts": [ "\u003Call_urls>", "chrome://favicon/*" ],
+         "manifest": [  ],
+         "scriptable_hosts": [ "http://*/*", "https://*/*" ]
+      },
+      "optional": {
+         "api": [  ],
+         "explicit_hosts": [  ],
+         "manifest": [  ],
+         "scriptable_hosts": [  ]
+      },
+      "tab_specific": {
+      },
+      "withheld": {
+         "api": [  ],
+         "explicit_hosts": [  ],
+         "manifest": [  ],
+         "scriptable_hosts": [  ]
+      }
+   },
+   "service_worker_keepalives": {
+      "activites": [  ],
+      "count": 0
+   },
+   "type": "TYPE_EXTENSION",
+   "version": "2.1.9"
