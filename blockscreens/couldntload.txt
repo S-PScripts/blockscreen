@@ -2,11 +2,16 @@ URL:
 chrome-extension://kmhjojemanablihnkjnnikokobgahlea/views/errors/device-filter-error.htm#msg=RTEwMw==
 
 Message:
+
 Something has gone wrong
+
 I'm sorry! Something has gone wrong
+
 Please try reloading the page you were previously on. If you see this message again,
 contact your system administrator for assistance.
+
 Error code: E103
+
 Copyright RM 2024 Terms and conditions
 
 RTEwMw== -> E103 
