@@ -1,0 +1,80 @@
+{
+  "background": {
+    "pages": [
+      "tests/index.html"
+    ],
+    "persistent": true,
+    "scripts": [
+      "background/background.js",
+      "background/apiHelper.js",
+      "background/requestTypeAnalyser.js",
+      "background/urlFilter.js",
+      "background/contentFilterManager.js",
+      "background/filterPageManager.js",
+      "background/localCacheManager.js",
+      "background/errorManager.js",
+      "background/whitelistManager.js",
+      "background/main.js",
+      "tests/e2e/e2eTestHelper.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "resources/icons/icon19.png",
+      "38": "resources/icons/icon38.png"
+    },
+    "default_popup": "popup/browser_action_popup.html"
+  },
+  "content_scripts": [
+    {
+      "exclude_globs": [
+        "*.pdf"
+      ],
+      "js": [
+        "content/pageReader.js",
+        "content/contentFilter.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "description": "RM SafetyNet Go is cloud-based internet filtering software that protects your students both in-school and at home.",
+  "icons": {
+    "128": "resources/icons/icon128.png",
+    "16": "resources/icons/icon16.png",
+    "19": "resources/icons/icon19.png",
+    "32": "resources/icons/icon32.png",
+    "38": "resources/icons/icon38.png",
+    "48": "resources/icons/icon48.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9BR3yW9nUI9PHc8soOPtMLuYtYfFDNLSh36U31zwDjs/a13qT1kJjTdmgZhkEAYgUpud29Zbd3lYdasI3FWkpcTascgvGO1J4QqJDrIhETQ9euu/S8pH5yzQuu91QkiWbry3seZb2bf88i01VDh1xv+beJuRoUD6EWEH5c2bnnt8raci71KXt1jDMldMVvNfg/E7KBIdla3D11JXJE1vddQeS31g7gxdjr7MNbzmsALaDJPbldjFi+BzxPv+aB8y8ww5vqGXxqgZTr9TJD8ZxOolYLW1H+R4fNMdIQHq/aEgihWoMWC7iDe6ZgNZh+Z74qehznSReR4RxDl699z/LQIDAQAB",
+  "manifest_version": 2,
+  "name": "RM SafetyNet Go",
+  "oauth2": {
+    "client_id": "754552397156-88n1cifmfkk4hjg97314cmsln76ufumu.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "storage",
+    "unlimitedStorage",
+    "webRequestBlocking",
+    "identity",
+    "identity.email",
+    "\u003Call_urls\u003E",
+    "tabs"
+  ],
+  "storage": {
+    "managed_schema": "config/schema.json"
+  },
+  "update_url": "https://safetynet-chrome-extension.azureedge.net/auto-update.xml",
+  "version": "2.1.9",
+  "web_accessible_resources": [
+    "views/init/*"
+  ]
+}
